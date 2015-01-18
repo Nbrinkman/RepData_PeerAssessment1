@@ -42,7 +42,7 @@ Make a histogram of the frequency of steps taken daily
 
 
 ```r
-hist(daily.steps, xlab = "Day", breaks = 25, ylab = "Frequency", main = "Total 
+hist(daily.steps, xlab = "Steps", breaks = 25, ylab = "Frequency", main = "Total 
      Daily Steps")
 ```
 
@@ -112,6 +112,8 @@ sum(is.na(activity))
 ## [1] 2304
 ```
 
+There are 2304 rows with NAs.
+
 ####b. Devise a strategy for filling in all of the missing values in the dataset. 
 The strategy doesn not need to be sophisticated.  For example, you could used 
 the mean/median for that day or the mean for that 5-minute interval, etc.
@@ -169,7 +171,7 @@ mean(filldata.total)
 ```
 
 ```
-## [1] 13081.57
+## [1] 13256.52
 ```
 
 ```r
@@ -205,15 +207,15 @@ head(filldata)
 
 ```
 ##   steps       date interval    days
-## 1   115 2012-10-01        0 weekday
-## 2   168 2012-10-01        5 weekday
-## 3   190 2012-10-01       10 weekday
-## 4    63 2012-10-01       15 weekday
-## 5    97 2012-10-01       20 weekday
-## 6    97 2012-10-01       25 weekday
+## 1    48 2012-10-01        0 weekday
+## 2   115 2012-10-01        5 weekday
+## 3   128 2012-10-01       10 weekday
+## 4   195 2012-10-01       15 weekday
+## 5   139 2012-10-01       20 weekday
+## 6    69 2012-10-01       25 weekday
 ```
 
-####b.  Make a panel plot containing a time series plot(i.e. type = "l") of the 5-minute interval (x-axis) and the average umber of steps taken, averaged across all weekdays or weekend days (y-axis).  
+####b.  Make a panel plot containing a time series plot(i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekdays or weekend days (y-axis).  
 See the README file the GitHub repository to see an example fo what this plot should look like using simulated data.
 
 
