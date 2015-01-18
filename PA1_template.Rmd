@@ -34,7 +34,7 @@ dim(daily.steps)
 Make a histogram of the frequency of steps taken daily 
 
 ```{r}
-hist(daily.steps, xlab = "Day", breaks = 25, ylab = "Frequency", main = "Total 
+hist(daily.steps, xlab = "Steps", breaks = 25, ylab = "Frequency", main = "Total 
      Daily Steps")
 ```
 
@@ -75,6 +75,8 @@ Note that there are a number of days/intervals where there are missing values
 ```{r}
 sum(is.na(activity))
 ```
+
+There are 2304 rows with NAs.
 
 ####b. Devise a strategy for filling in all of the missing values in the dataset. 
 The strategy doesn not need to be sophisticated.  For example, you could used 
@@ -124,7 +126,7 @@ levels(filldata$days) <- list(weekday = c("Monday", "Tuesday", "Wednesday", "Thu
 head(filldata)
 ```
 
-####b.  Make a panel plot containing a time series plot(i.e. type = "l") of the 5-minute interval (x-axis) and the average umber of steps taken, averaged across all weekdays or weekend days (y-axis).  
+####b.  Make a panel plot containing a time series plot(i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekdays or weekend days (y-axis).  
 See the README file the GitHub repository to see an example fo what this plot should look like using simulated data.
 
 ```{r}
